@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feliz Día de la Bailarina</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #f6d365);
+    background-size: 400% 400%;
+    animation: fondo 10s ease infinite;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+}
+
+@keyframes fondo {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.tarjeta {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 50px;
+    border-radius: 30px;
+    text-align: center;
+    width: 450px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 2;
+    animation: aparecer 1.5s ease;
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+h1 {
+    font-size: 32px;
+    background: linear-gradient(90deg, #ff4081, #c2185b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #ad1457;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #6a1b4d;
+    line-height: 1.6;
+}
+
+.mensaje {
+    margin-top: 25px;
+    font-weight: bold;
+    font-style: italic;
+    color: #c2185b;
+}
+
+/* Corazones flotando */
+.corazon {
+    position: absolute;
+    color: rgba(255,255,255,0.7);
+    font-size: 20px;
+    animation: flotar 6s linear infinite;
+}
+
+@keyframes flotar {
+    0% { transform: translateY(100vh); opacity: 0; }
+    20% { opacity: 1; }
+    100% { transform: translateY(-10vh); opacity: 0; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="tarjeta">
+    <h1>🌸 ¡Feliz Día de la Bailarina! 🌸</h1>
+    <h2>Para: tdxsss 💖</h2>
+
+    <p>
+        Eres talento, pasión y gracia.<br>
+        Que sigas brillando en cada paso que das.
+    </p>
+
+    <p class="mensaje">
+        ✨ ¡Sigue cumpliendo tus sueños! ✨
+    </p>
+</div>
+
+<!-- Corazones -->
+<div class="corazon" style="left:10%; animation-delay:0s;">💖</div>
+<div class="corazon" style="left:25%; animation-delay:2s;">💗</div>
+<div class="corazon" style="left:40%; animation-delay:4s;">💞</div>
+<div class="corazon" style="left:60%; animation-delay:1s;">💕</div>
+<div class="corazon" style="left:80%; animation-delay:3s;">💓</div>
+
+</body>
+</html>
